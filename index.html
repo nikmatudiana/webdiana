@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #333;
+    }
+
+    .header {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 36px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .header p {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    .navbar {
+      background-color: #ffffffcc;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .navbar a {
+      color: #333;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #0077ff;
+    }
+
+    .main {
+      display: flex;
+      padding: 30px;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .index {
+      background-color: white;
+      width: 280px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .index h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .index ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .index li {
+      margin: 15px 0;
+      font-size: 16px;
+    }
+
+    .index a {
+      color: #0077ff;
+      text-decoration: none;
+    }
+
+    .index a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      background-color: white;
+      width: 60%;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .content h2 {
+      margin-top: 0;
+      color: #444;
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 20px auto;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+      border: 4px solid #fff;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 220px;
+      height: 150px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background-color: #222;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    My Personal Website
+    <p>Sharing Knowledge, Stories, and Inspiration</p>
+  </div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About Me</a>
+    <a href="#">Projects</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="main">
+    <div class="index">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">My Portfolio</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Certificates</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="#">Testimonials</a></li>
+      </ul>
+      <img src="assests\sapi.jpeg" alt="Fun Activity" style="width: 100%; border-radius: 12px; margin-top: 20px;">
+    </div>
+
+    <div class="content">
+      <h2>About Me</h2>
+      <img src="assests\diana12.jpg" alt="Profile Photo" class="profile-pic">
+      <p>Hello! I am Diana. I am currently a student of Computer Engineering and Networking at SMK Telkom Malang. My studies focus on understanding computer systems, network infrastructure, and modern technologies that support digital transformation.
+
+        Right now, I am actively learning cloud computing using Amazon Web Services (AWS) and exploring Linux-based systems, especially CentOS, to deepen my understanding of server environments. I enjoy gaining hands-on experience with virtualization, command-line operations, and system configuration.
+        
+        In addition, I have a strong proficiency in Microsoft Excel, which allows me to manage data efficiently, perform advanced calculations, and create insightful visualizations. I believe combining technical skills with data management is a valuable strength in today’s digital landscape.
+        
+        </p>
+
+      <h2>What I Do</h2>
+      <p>I am currently learning cloud computing using Amazon Web Services (AWS). I’ve been exploring various AWS services such as EC2, S3, and IAM to understand how cloud infrastructure works. This includes learning how to deploy applications, manage virtual servers, store data securely, and control access through identity and permissions management. My goal is to gain a solid foundation in AWS so I can build scalable, secure, and efficient cloud-based solutions in the future.</p>
+
+      <h2>Recent Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website:</strong> A modern personal site with project showcases and blog integration.</li>
+        <li><strong>E-commerce Platform:</strong> An online store with payment integration and user management.</li>
+        <li><strong>Blog CMS:</strong> A blogging platform with WYSIWYG editor, categories, and commenting.</li>
+      </ul>
+
+      <h2>Project Gallery</h2>
+      <div class="gallery">
+        <img src="assests\Screenshot 2023-10-11 112514.png" alt="Project 1">
+        <img src="assests\Screenshot 2025-05-18 162625.png" alt="Project 2">
+        <img src="assests\Screenshot 2025-06-22 110301.png" alt="Project 3">
+      </div>
+
+      <h2>Contact Me</h2>
+      <p>If you're interested in working together or just want to connect, feel free to reach out via my <a href="#">Contact Page</a> or email me at <strong>contact@diana.dev</strong>.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Diana's Website | All rights reserved.
+  </div>
+
+</body>
+</html>
